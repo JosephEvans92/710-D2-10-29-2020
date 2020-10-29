@@ -6,38 +6,40 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
-import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 import { MyResumeComponent } from './my-resume/my-resume.component';
-import { ResumeWorkExperienceComponent } from './my-resume/resume-work-experience/resume-work-experience.component';
 import { ResumeProfileComponent } from './my-resume/resume-profile/resume-profile.component';
-import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.component';
+import { ResumeWorkExperienceComponent } from './my-resume/resume-work-experience/resume-work-experience.component';
 import { ResumeEducationComponent } from './my-resume/resume-education/resume-education.component';
+import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: 'tutorial', component: ProductListComponent },
+      { path: 'tutorial/products/:productId', component: ProductDetailsComponent },
+      { path: '', component: MyResumeComponent },
+
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
     ProductListComponent,
-    ProductDetailsComponent,
     ProductAlertsComponent,
+    ProductDetailsComponent,
     MyResumeComponent,
-    ResumeWorkExperienceComponent,
     ResumeProfileComponent,
-    ResumeFooterComponent,
-    ResumeEducationComponent
+    ResumeWorkExperienceComponent,
+    ResumeEducationComponent,
+    ResumeFooterComponent
   ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
-
 
 /*
 Copyright Google LLC. All Rights Reserved.

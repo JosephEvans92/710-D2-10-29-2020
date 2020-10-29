@@ -1,0 +1,37 @@
+<div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="{{profile.photo}}" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>{{profile.firstName}} {{profile.lastName}}</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>{{profile.profession}}</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>{{profile.address.city}} {{profile.address.country}}</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>{{profile.address.email}}</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>{{profile.phoneNumbers[0].number}}</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+
+          <!-- Read in an array of skills from JSON-->
+          <div *ngFor="let skill of profile.skills">
+		        <p>{{skill.skill}}</p>
+             <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:{{skill.level}}">{{skill.level}}</div>
+             </div>
+          </div>
+
+          <br>
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>     
+        
+        <!-- Replacing hard coded language data with JSON Array    -->
+        <div *ngFor="let language of profile.languages">
+          <p>{{language.language}}</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:{{language.level}}"></div>
+          </div>
+        </div>
+          <br>
+        </div>
+      </div><br>

@@ -1,4 +1,3 @@
-  
 import { Component, OnInit } from '@angular/core';
 import { r1 } from '../products';
 

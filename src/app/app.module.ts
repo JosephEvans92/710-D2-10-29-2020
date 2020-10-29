@@ -9,6 +9,10 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { MyResumeComponent } from './my-resume/my-resume.component';
+import { ResumeWorkExperienceComponent } from './my-resume/resume-work-experience/resume-work-experience.component';
+import { ResumeProfileComponent } from './my-resume/resume-profile/resume-profile.component';
+import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.component';
+import { ResumeEducationComponent } from './my-resume/resume-education/resume-education.component';
 
 @NgModule({
   imports: [
@@ -24,7 +28,11 @@ import { MyResumeComponent } from './my-resume/my-resume.component';
     ProductListComponent,
     ProductDetailsComponent,
     ProductAlertsComponent,
-    MyResumeComponent
+    MyResumeComponent,
+    ResumeWorkExperienceComponent,
+    ResumeProfileComponent,
+    ResumeFooterComponent,
+    ResumeEducationComponent
   ],
   bootstrap: [ AppComponent ]
 })

@@ -24,7 +24,7 @@ export const r1 = {
   "lastName": "Evans",
   "isAlive": true,
   "age": 28,
-  "photo": "https://www.w3schools.com/w3images/avatar_hat.jpg",
+  "photo": "https://insuranceblog.accenture.com/wp-content/uploads/2019/06/Tech_Trends.jpg",
   "profession": "IT technician",
   "address": {
     "streetAddress": "114-02 Francis Lewis Blvd",

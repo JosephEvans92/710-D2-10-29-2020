@@ -20,19 +20,19 @@ export const products = [
 
 export const r1 = {
   "profile":{
-  "firstName": "Jane",
-  "lastName": "Smith",
+  "firstName": "Joseph",
+  "lastName": "Evans",
   "isAlive": true,
-  "age": 27,
+  "age": 28,
   "photo": "https://www.w3schools.com/w3images/avatar_hat.jpg",
-  "profession": "Designer",
+  "profession": "IT technician",
   "address": {
-    "streetAddress": "21 2nd Street",
+    "streetAddress": "114-02 Francis Lewis Blvd",
     "city": "New York ",
     "state": "NY",
-    "postalCode": "10021-3100",
+    "postalCode": "11411",
     "country": "USA",
-    "email": "ex@mail.com"
+    "email": "jevans@qcc.cuny.edu"
   },
   "phoneNumbers": [
     {
@@ -52,32 +52,29 @@ export const r1 = {
 	
 		{
 		"language": "Spanish",
-		"level": "50%"
+		"level": "20%"
 	},
-		{
-		"language": "German",
-		"level": "25%"
-	}
+			
 	
 	],
 
 "skills":[
 	{
-		"skill": "Adobe Photoshop",
+		"skill": "HTLM",
 		"level": "95%"
 	},
 	
 		{
-		"skill": "Photography",
+		"skill": "CSS",
 		"level": "80%"
 	},
 		{
-		"skill": "Illustrator",
+		"skill": "Linux",
 		"level": "85%"
 	},
 	
 		{
-		"skill": "Media",
+		"skill": "Python",
 		"level": "50%"
 	}
 	],

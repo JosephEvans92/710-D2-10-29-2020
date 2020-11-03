@@ -19,8 +19,8 @@ import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.c
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: 'tutorial', component: ProductListComponent },
-      { path: 'tutorial/products/:productId', component: ProductDetailsComponent },
+      { path: '', component: ProductListComponent },
+     { path: 'products/:productId', component: ProductDetailsComponent },
       { path: '', component: MyResumeComponent },
 
     ])
